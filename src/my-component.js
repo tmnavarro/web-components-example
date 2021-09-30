@@ -5,6 +5,7 @@ class MyComponent extends HTMLElement {
 
     // Cria uma novo shadow component (DOM Interna)
     // interno ao MyComponent
+    // { mode: "open/closed" } define o acesso ao Root do elemento criado
     const shadow = this.attachShadow({ mode: "open" });
 
     const raiz = document.createElement("span");
